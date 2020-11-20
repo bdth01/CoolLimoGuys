@@ -45,8 +45,9 @@ else {
 //Tip stuff *-------------------------------------------------------------------
 const tip = document.getElementById('tip');
 const tipCustome = document.getElementById('custome');
-if (tip.value == 'None' || tipCustome.value) {
+if (tip.value == 'None' || tipCustome.value == '0' || tipCustome.value == '') {
   let tipValue = 0
+  console.log(tipValue);
 }
 
 //Submit stuff *----------------------------------------------------------------
