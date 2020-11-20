@@ -42,6 +42,8 @@ if (drink.value == 'None') {
 else {
   let drinkCost = parseInt(drink.value) * 35;
 }
+//Cost befor tips *-------------------------------------------------------------
+let cost = carCost + drinkCost;
 //Tip stuff *-------------------------------------------------------------------
 const tip = document.getElementById('tip');
 const tipCustome = document.getElementById('custome');
@@ -49,8 +51,27 @@ if (tip.value == 'None' || tipCustome.value == '0' || tipCustome.value == '') {
   let tipValue = 0
   console.log(tipValue);
 }
-
+if (tip.value == '15') {
+  var one = '15%';
+  one = parseFloat(one) / 100;
+  let tipValue = one * cost + cost;
+}
+if (tip.value == '20') {
+  var two = '20%';
+  two = parseFloat(two) / 100;
+  let tipValue = two * cost + cost;
+}
+if (tip.value == '25') {
+  var three = '25%';
+  three = parseFloat(three) / 100;
+  let tipValue = three * cost + cost
+}
+if (tipCustome.value > 0) {
+  tipCustome.value = ct;
+  ct = parseFloat(ct) / 100;
+  let tipValue = ct * cost + cost;
+}
 //Submit stuff *----------------------------------------------------------------
-document.getElementById('total').addEventListener('change', (evt)=>{
-  let cost = carCost + drinkCost;
+const total document.getElementById('total').addEventListener('change', (evt)=>{
+  total.innerHTML == `$${tipValue}`
 })
