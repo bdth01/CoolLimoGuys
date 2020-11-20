@@ -42,6 +42,14 @@ if (drink.value == 'None') {
 else {
   let drinkCost = parseInt(drink.value) * 35;
 }
+//Tip stuff *-------------------------------------------------------------------
+const tip = document.getElementById('tip');
+const tipCustome = document.getElementById('custome');
+if (tip.value == 'None' || tipCustome.value == '0' || tipCustome.value == '') {
+  let tipValue = 0
+  console.log(tipValue);
+}
+
 //Submit stuff *----------------------------------------------------------------
 document.getElementById('total').addEventListener('change', (evt)=>{
   let cost = carCost + drinkCost;
