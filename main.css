@@ -57,3 +57,28 @@ section {
   border-radius: 50px;
   padding: 25px;
 }
+
+/*Reservations HTML*/
+
+.champagne {
+  position: absolute;
+  left: 33%;
+}
+
+#Champagne {
+  position: absolute;
+  left: 33%;
+}
+
+#Champagne h2 {
+  position: absolute;
+  width: 300px;
+  top: -50px;
+  left: -80px;
+}
+
+#Cars {
+  top: 400px;
+  position: absolute;
+  left: 33%;
+}
