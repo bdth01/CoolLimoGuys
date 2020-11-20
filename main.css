@@ -20,7 +20,7 @@ header {
   background-color: black;
   color: white;
   width: 100%;
-  height: 150px;
+  height: 200px;
   top: 0px;
   opacity: 75%;
 }
@@ -31,12 +31,15 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  right: 75px;
+  right: 125px;
   cursor: pointer;
+  top: 100px;
+  font-size: 24px;
+  color: white;
 }
 
 .li-header {
-  padding-left: 15px;
+  margin-left: 75px;
 }
 
 header h1 {
@@ -53,7 +56,22 @@ section {
   width: 400px;
   height: 400px;
   margin: auto;
-  top: 200px;
+  top: 250px;
   border-radius: 50px;
   padding: 25px;
+}
+
+button {
+  position: relative;
+  background-color: #F5C24C;
+  color: black;
+  width: 250px;
+  height: 75px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: gray;
 }
