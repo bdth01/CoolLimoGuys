@@ -10,8 +10,9 @@ img {
 }
 
 h1 {
-  position: absolute;
-  top: 17px;
+  position: relative;
+  top: 15px;
+  margin-left: 250px;
   font-size: 56px;
 }
 
@@ -23,6 +24,9 @@ header {
   height: 200px;
   top: 0px;
   opacity: 75%;
+  border-bottom: solid;
+  border-bottom-color: #EFB249;
+  border-bottom-width: thick;
 }
 
 #ul-header {
@@ -35,11 +39,15 @@ header {
   cursor: pointer;
   top: 100px;
   font-size: 24px;
-  color: white;
 }
 
 .li-header {
   margin-left: 75px;
+}
+
+a:active,a:visited,a:link {
+  color: white;
+  text-decoration: none;
 }
 
 header h1 {
@@ -59,11 +67,13 @@ section {
   top: 250px;
   border-radius: 50px;
   padding: 25px;
+  border-style: solid;
+  border-color: #EFB249;
 }
 
 button {
   position: relative;
-  background-color: #F5C24C;
+  background-color: #EFB249;
   color: black;
   width: 250px;
   height: 75px;
