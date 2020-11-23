@@ -10,37 +10,45 @@ let isContinental = false;
 let isHummer = false;
 let isVintage = false;
 
-continental.addEventListener('change', (evt)=>{
-  if (continental = 'yes') {
-    isContinental = true;
-    let carCost = parseInt(hour.value) * 75;
-    isHummer = false;
-    isVintage = false;
-  }
-})
-hummer.addEventListener('change', (evt)=>{
-  if (hummer = 'yes') {
-    isHummer = true;
-    let carCost = parseInt(hour.value) * 100;
-    isContinental = false;
-    isVintage = false;
-  }
-})
-vintage.addEventListener('change', (evt)=>{
-  if (vintage = 'yes') {
-    isVintage = true;
-    let carCost = parseInt(hour.value) * 150;
-    isHummer = false;
-    isContinental = false;
-  }
-})
+if (continental !== null) {
+  continental.addEventListener('change', (evt)=>{
+    if (continental = 'yes') {
+      isContinental = true;
+      let carCost = parseInt(hour.value) * 75;
+      isHummer = false;
+      isVintage = false;
+    }
+  })
+}
+if (hummer !== null) {
+  hummer.addEventListener('change', (evt)=>{
+    if (hummer = 'yes') {
+      isHummer = true;
+      let carCost = parseInt(hour.value) * 100;
+      isContinental = false;
+      isVintage = false;
+    }
+  })
+}
+if (vintage !== null) {
+  vintage.addEventListener('change', (evt)=>{
+    if (vintage = 'yes') {
+      isVintage = true;
+      let carCost = parseInt(hour.value) * 150;
+      isHummer = false;
+      isContinental = false;
+    }
+  })
+}
 //Drink stuff *-----------------------------------------------------------------
 const drink = document.getElementById('drink');
-if (drink.value == 'None') {
-  let drinkCost = 0;
-}
-else {
-  let drinkCost = parseInt(drink.value) * 35;
+if (drink !== null) {
+  if (drink.value == 'None') {
+    let drinkCost = 0;
+  }
+  else {
+    let drinkCost = parseInt(drink.value) * 35;
+  }
 }
 //Cost befor tips *-------------------------------------------------------------
 let cost = carCost + drinkCost;
@@ -72,6 +80,7 @@ if (tipCustome.value > 0) {
   let tipValue = ct * cost + cost;
 }
 //Submit stuff *----------------------------------------------------------------
-const total document.getElementById('total').addEventListener('change', (evt)=>{
-  total.innerHTML == `$${tipValue}`
+const total = document.getElementById('total');
+total.addEventListener('change', (evt)=>{
+  total.innerHTML = `$${tipValue}`
 })
