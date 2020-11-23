@@ -8,62 +8,67 @@
     <script defer src="script.js" charset="utf-8"></script>
   </head>
   <body>
-    <section id="resPage">
+    <div id="main-section">
 
-    </section>
-    <div id="Cars">
-      <h2>Limo</h2>
-      <select id="carOne" name="carOne">
-        <option>yes</option>
-        <option>no</option>
+      <div id="Cars">
+        <h2>Limo</h2>
+        <select id="carOne" name="carOne">
+          <option>yes</option>
+          <option>no</option>
+        </select>
+        <select id="carTwo" name="carTwo">
+          <option>yes</option>
+          <option>no</option>
+        </select>
+        <select id="carThree" name="carThree">
+          <option>yes</option>
+          <option>no</option>
+        </select>
+      </div>
+        <div id="carDate">
+          <h2>Date</h2>
+          <input type="date" name="date" placeholder="mm/dd/yyyy">
+        </div>
+
+      <h2>Time Duration</h2>
+
+      <h3>Start:</h3>
+      <input id="carTime" type="time" name="time">
+      <h3>End:</h3>
+      <input id="carTime2" type="time" name="time">
+      <div id="Champagne">
+        <h2>Choose Champagne</h2>
+        <select class="champagne" name="champagne">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+      <h1>Total</h1>
+      <p>$0</p>
+
+      <h2>Total</h2>
+      <p id="total">$0</p>
+      <h2>Tip</h2>
+      <select id="tip" name="tip">
+        <option value="0">0%</option>
+        <option value="15">15%</option>
+        <option value="20">20%</option>
+        <option value="25">25%</option>
       </select>
-      <select id="carTwo" name="carTwo">
-        <option>yes</option>
-        <option>no</option>
-      </select>
-      <select id="carThree" name="carThree">
-        <option>yes</option>
-        <option>no</option>
-      </select>
+      <h2>Custom Tip</h2>
+      <input type="number" min="0" name="custom" placeholder="A Number">
+
     </div>
-    <h2>Date</h2>
-    <input id="carDate" type="date" name="date" placeholder="mm/dd/yyyy">
-    <h2>Time Duration</h2>
 
-    <h3>Start:</h3>
-    <input id="carTime" type="time" name="time">
-    <h3>End:</h3>
-    <input id="carTime2" type="time" name="time">
-    <div id="Champagne">
-      <h2>Choose Champagne</h2>
-      <select class="champagne" name="champagne">
-        <option value="0">0</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-      </select>
-    </div>
-    <h1>Total</h1>
-    <p>$0</p>
-
-    <h2>Total</h2>
-    <p id="total">$0</p>
-    <h2>Tip</h2>
-    <select id="tip" name="tip">
-      <option value="0">0%</option>
-      <option value="15">15%</option>
-      <option value="20">20%</option>
-      <option value="25">25%</option>
-    </select>
-    <h2>Custom Tip</h2>
-    <input type="number" min="0" name="custom" placeholder="A Number">
     <header>
       <img src="" alt="">
       <h1>Stretch's Limos</h1>

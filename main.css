@@ -107,6 +107,16 @@ button:hover {
 
 /*Reservations HTML*/
 
+#main-section {
+  position: absolute;
+  top: 250px;
+}
+
+#carDate {
+  position: absolute;
+  left: 500px;
+}
+
 .champagne {
   position: absolute;
   left: 33%;
