@@ -1,3 +1,9 @@
+const total = document.getElementById('total');
+document.getElementById('go').addEventListener('click',(evt)=>{
+  total.innerHTML = `$${calcTotalCost()}`
+  alert("This will be emailed to you.")
+  console.log(`Total Cost: ${calcTotalCost()}`);
+})
 
 function calcTotalCost() {
   const startTime = document.getElementById('carTime');
@@ -33,7 +39,43 @@ function calcTotalCost() {
   const totalTime = calcAdjustedhours(start, end);
 
   const totalCost = totalTime * carRate + bottles * bottlePrice;
-  return totalCost;
+
+  const tipf = calcTip(totalCost);
+  return tipf;
+}
+
+function calcTip(totalCost) {
+  const tip = document.getElementById('tip');
+  const tipCustome = document.getElementById('custome');
+  let tipRate = 0;
+
+  if (tipCustome.value !== "") {
+    tipRate = parseFloat(tipCustome.value) / 100;
+  }
+  else {
+    switch (tip.value) {
+      case "0":
+        tipRate = 0;
+        break;
+      case "15":
+        tipRate = parseFloat(15) / 100;
+        break;
+      case "20":
+        tipRate = parseFloat(20) / 100;
+        break;
+      case "25":
+        tipRate = parseFloat(25) / 100;
+        break;
+      default:
+        tipRate = 56;
+        break;
+    }
+  }
+
+
+  let final = totalCost * tipRate + totalCost
+
+return final;
 }
 
 function calcAdjustedhours(start, end) {
