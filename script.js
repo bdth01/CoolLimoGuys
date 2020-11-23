@@ -20,7 +20,10 @@ if (continental !== null) {
     }
   })
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> dd9ba245add96d9480033a28371b8dd8cfd1cef0
 if (hummer !== null) {
   hummer.addEventListener('change', (evt)=>{
     if (hummer = 'yes') {
@@ -31,7 +34,10 @@ if (hummer !== null) {
     }
   })
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> dd9ba245add96d9480033a28371b8dd8cfd1cef0
 if (vintage !== null) {
   vintage.addEventListener('change', (evt)=>{
     if (vintage = 'yes') {
@@ -44,7 +50,11 @@ if (vintage !== null) {
 }
 //Drink stuff *-----------------------------------------------------------------
 const drink = document.getElementById('drink');
+<<<<<<< HEAD
   if (drink !== null) {
+=======
+if (drink !== null) {
+>>>>>>> dd9ba245add96d9480033a28371b8dd8cfd1cef0
   if (drink.value == 'None') {
     let drinkCost = 0;
   }
@@ -84,6 +94,12 @@ if (carCost !== null) {
   }
 }
 //Submit stuff *----------------------------------------------------------------
+<<<<<<< HEAD
 const total = document.getElementById('total').addEventListener('change', (evt)=>{
   total.innerHTML == `$${tipValue}`
+=======
+const total = document.getElementById('total');
+total.addEventListener('change', (evt)=>{
+  total.innerHTML = `$${tipValue}`
+>>>>>>> dd9ba245add96d9480033a28371b8dd8cfd1cef0
 })
