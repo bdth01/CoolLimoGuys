@@ -3,7 +3,7 @@ body {
   padding: 0;
 }
 
-img {
+#home-image {
   position: absolute;
   width: 100%;
   filter: blur(5px);
@@ -99,12 +99,16 @@ button {
   border-radius: 50px;
   font-size: 16px;
   cursor: pointer;
+  top: 150px;
 }
 
 button:hover {
   background-color: gray;
 }
 
+#go {
+  top: 0;
+}
 /*Reservations HTML*/
 
 #champagne {
@@ -179,4 +183,77 @@ button:hover {
 }
 #total {
   margin-top: 35px;
+/* SERVICES PAGE */
+
+#limo-section {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  top: 250px;
+  width: 100%;
+  height: 250px;
+  margin: auto;
+}
+
+.image {
+  width: 400px;
+  height: 250px;
+  margin: auto;
+}
+
+#section h1 {
+  position: absolute;
+  text-align: center;
+  margin-left: 0px;
+  top: 50px;
+  left: 0px;
+}
+
+#section p {
+  top: 200px;
+  position: relative;
+  text-align: center;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 6rem;
+	font-weight:  100;
+	letter-spacing: 2px;
+	text-align: center;
+	color: #f35626;
+	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 10s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+hr {
+  position: relative;
+  top: 300px;
+}
+
+#homeTimer {
+  top: 100px;
+  position: absolute;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 6rem;
+	font-weight: 100;
+	letter-spacing: 2px;
+	text-align: center;
+	color: #f35626;
+	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 10s infinite linear;
+}
+
+#homeHR {
+  top: auto;
 }

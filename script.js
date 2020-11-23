@@ -52,6 +52,38 @@
 //     let drinkCost = parseInt(drink.value) * 35;
 //   }
 // }
+// if (hummer !== null) {
+//   hummer.addEventListener('change', (evt)=>{
+//     if (hummer = 'yes') {
+//       isHummer = true;
+//       let carCost = parseInt(hour.value) * 100;
+//       isContinental = false;
+//       isVintage = false;
+//     }
+//   })
+// }
+//
+// if (vintage !== null) {
+//   vintage.addEventListener('change', (evt)=>{
+//     if (vintage = 'yes') {
+//       isVintage = true;
+//       let carCost = parseInt(hour.value) * 150;
+//       isHummer = false;
+//       isContinental = false;
+//     }
+//   })
+// }
+// //Drink stuff *-----------------------------------------------------------------
+// const drink = document.getElementById('drink');
+//   if (drink !== null) {
+//   if (drink.value == 'None') {
+//     let drinkCost = 0;
+//   }
+//   else {
+//     let drinkCost = parseInt(drink.value) * 35;
+//   }
+// }
+// >>>>>>> 160b6006d499d0d3d3da7c0fb5a1a37f722df897
 //Cost befor tips *-------------------------------------------------------------
 // let cost = carCost + drinkCost;
 //Tip stuff *-------------------------------------------------------------------
@@ -89,3 +121,5 @@
 // total.addEventListener('change', (evt)=>{
 //   total.innerHTML = `$${tipValue}`
 // })
+// })
+// >>>>>>> 160b6006d499d0d3d3da7c0fb5a1a37f722df897
