@@ -215,7 +215,7 @@ button:hover {
   position: relative;
   text-align: center;
 	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-	font-size: 6rem;
+	font-size: 4rem;
 	font-weight:  100;
 	letter-spacing: 2px;
 	text-align: center;
@@ -235,9 +235,10 @@ button:hover {
   }
 }
 
-hr {
+
+.hrThing {
   position: relative;
-  top: 300px;
+  top: 250px;
 }
 
 #homeTimer {
@@ -255,6 +256,7 @@ hr {
 	-webkit-text-fill-color: transparent;
 	-webkit-animation: hue 10s infinite linear;
 }
+
 
 #homeHR {
   top: auto;
