@@ -187,6 +187,7 @@ button:hover {
 
 /* SERVICES PAGE */
 
+
 #LimoSection {
   position: relative;
   display: flex;
@@ -221,6 +222,13 @@ button:hover {
   margin: auto;
 }
 
+#ChooseLimo {
+  position: relative;
+  width: 375px;
+  margin: auto;
+  top: 150px;
+}
+
 .car {
   position: relative;
   display: block;
@@ -228,7 +236,15 @@ button:hover {
   height: 25px;
   text-align: center;
   margin: auto;
-  top: 250px;
+  top: 175px;
+}
+
+#ServicesButton {
+  position: relative;
+  display: block;
+  width: 250px;
+  margin: auto;
+  top: 200px;
 }
 
 /* TIMER */
@@ -246,7 +262,7 @@ button:hover {
   position: relative;
   text-align: center;
 	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-	font-size: 6rem;
+	font-size: 4rem;
 	font-weight:  100;
 	letter-spacing: 2px;
 	text-align: center;
@@ -266,16 +282,18 @@ button:hover {
   }
 }
 
-hr {
+
+.hrThing {
   position: relative;
-  top: 300px;
+  top: 250px;
 }
 
 #homeTimer {
-  top: 100px;
+  top: 140px;
+  left: 50px;
   position: absolute;
 	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-	font-size: 6rem;
+	font-size: 3rem;
 	font-weight: 100;
 	letter-spacing: 2px;
 	text-align: center;
@@ -285,6 +303,7 @@ hr {
 	-webkit-text-fill-color: transparent;
 	-webkit-animation: hue 10s infinite linear;
 }
+
 
 #homeHR {
   top: auto;
