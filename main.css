@@ -183,9 +183,10 @@ button:hover {
 }
 #total {
   margin-top: 35px;
+}
 /* SERVICES PAGE */
 
-#limo-section {
+#limoSection {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -240,10 +241,11 @@ hr {
 }
 
 #homeTimer {
-  top: 100px;
+  top: 140px;
+  left: 50px;
   position: absolute;
 	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-	font-size: 6rem;
+	font-size: 3rem;
 	font-weight: 100;
 	letter-spacing: 2px;
 	text-align: center;
