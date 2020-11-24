@@ -183,9 +183,11 @@ button:hover {
 }
 #total {
   margin-top: 35px;
+}
+
 /* SERVICES PAGE */
 
-#limo-section {
+#LimoSection {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -195,11 +197,41 @@ button:hover {
   margin: auto;
 }
 
+#LimoInfo {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  top: 250px;
+  width: 100%;
+  height: 250px;
+  margin: auto;
+  text-align: center;
+}
+
 .image {
   width: 400px;
   height: 250px;
   margin: auto;
 }
+
+.info {
+  width: 400px;
+  height: 250px;
+  margin: auto;
+}
+
+.car {
+  position: relative;
+  display: block;
+  width: 250px;
+  height: 25px;
+  text-align: center;
+  margin: auto;
+  top: 250px;
+}
+
+/* TIMER */
 
 #section h1 {
   position: absolute;
